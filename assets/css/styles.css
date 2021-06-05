@@ -7,7 +7,7 @@
 }
 /*---------------COLORES----------------*/
 :root{
-    --first-color: #ff3a5e;
+    --first-color: #ff5171;
     --second-color:#420a0a;
     --white:#fff;
 
@@ -118,10 +118,6 @@ img{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas:
-      'home_data home_data home_data home_data '
-      'home_data home_data home_data home_data '
-      'home_social home_img home_img home_img';
     grid-gap: 1rem;
     background-color:var(--first-color);
     padding: 0 1rem;
@@ -213,7 +209,7 @@ img{
 /*home data*/
 .home{
     
-    height: calc(100vh - 3rem);
+    height: 100vh;
     row-gap: 1rem;
 }
 .home_up{
@@ -242,6 +238,10 @@ img{
 
 /*home social icons*/
 .home_social{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.home_social_div{
     display:flex;
     flex-direction: column;
 }
@@ -427,6 +427,9 @@ img{
       padding-top: 4rem;
       padding-bottom: 3rem;
     }
+    .section-title::after{
+        background-color: var(--second-color);
+    }
     .section-title{
       margin-bottom: var(--mb-6);
       margin-top: 1rem;
@@ -434,6 +437,7 @@ img{
     .section-title::after{
       width: 80px;
       top: 3rem;
+      
     }
   
     .nav{
@@ -451,7 +455,7 @@ img{
       display: none;
     }
     .nav_link{
-        color: var(--second-color);
+        color: var(--white);
     }
   
     .home_data{
@@ -463,11 +467,12 @@ img{
     }
     .home_social{
         grid-column: 1/2;
-        grid-row: 1/3;
-        padding-top: 0;
-        padding-bottom: 2.5rem;
+        grid-row: 3/4;
+       
+        
+    }
+    .home_social_div{
         flex-direction: row;
-        align-self: flex-end;
     }
     .home_social-icon{
         margin-bottom: 0;
