@@ -4,14 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="assets/css/styles.css">
+ 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" id="theme" href="./assets/css/styles.css">
     <!--BoxIcons-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+
 
     <title>Eduardo Rivera</title>
 </head>
 <body>
+    <div id="selector-theme">
+        <i id="change-theme" class='btn-float  bx bx-moon ' ></i>
+    
+    
+    </div>
     <!--//////////////////////////  HEADER  ////////////////////////////-->
     <header class="l-header">
         <nav class="nav bd-grid" >
@@ -34,11 +43,13 @@
         </nav>
     </header>
     <main class="l-main" >
+ 
         <!---------HOME--------->
         <section class="home grid-container" id="home">
+         
             <div class="home_data">
                 <div class="home_data_div">
-                    <h1 class="home_title">Hi, <br> I'm <span class="home_title-color">Eduardo</span><br>Web Designer</h1>
+                    <h1 class="home_title">Hi, <br> I'm <span class="home_title-color type" >Eduardo</span><br>Web Designer</h1>
                     <a download="" href="assets/pdf/CV.pdf" class="button button-flex">Download CV
                     <i class='bx bx-download'></i></a>
                 </div>
@@ -54,6 +65,7 @@
             <div class="home_img">  
                 <img src="./assets/img/Me.png" alt="">
             </div>
+            
         </section>
         <!---------ABOUT--------->
         <section class="about section" id="about">
@@ -139,6 +151,8 @@
     <!--//////////////////////////  MAIN JS  ////////////////////////////-->
 
     <script src="./assets/js/main.js"></script>
+
+
 
 
     

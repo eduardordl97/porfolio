@@ -7,8 +7,8 @@
 }
 /*---------------COLORES----------------*/
 :root{
-    --first-color: #ff5171;
-    --second-color:#420a0a;
+    --first-color: #fff;
+    --second-color:#fff;
     --white:#fff;
 
 }
@@ -57,6 +57,7 @@ body{
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--second-color);
+    background-color: rgb(15, 17, 19);
 }
 h1,h2,p{
     margin: 0;
@@ -95,7 +96,7 @@ img{
     right: 0;
     margin: auto;
     top: 2rem;
-    background-color: var(--first-color);
+    background-color:  #ff5171;
 }
 .section{
     padding-top: 1rem; 
@@ -119,7 +120,7 @@ img{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem;
-    background-color:var(--first-color);
+    background-color:rgb(41, 41, 41);
     padding: 0 1rem;
     
    
@@ -133,6 +134,7 @@ img{
     z-index: var(--z-fixed);
     background-color: var(--first-color);
     box-shadow: 0 1px 20px rgba(0, 0, 0, 0.15);
+    background-color:  rgb(15, 17, 19);
 }
 
 /*---------------NAV----------------*/
@@ -142,6 +144,7 @@ img{
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-m);
+    background-color:  rgb(15, 17, 19);
 
 }
 @media screen and (max-width: 768px) {
@@ -152,7 +155,7 @@ img{
         width: 70%;
         height: 100%;
         padding: 2rem;
-        background-color: var(--second-color);
+        background-color:  rgb(15, 17, 19);
         transition: .5s;
 
     }  
@@ -178,7 +181,7 @@ img{
     height: 0.18rem;
     left: 0;
     top: 2rem;
-    background-color: var(--first-color);
+    background-color:  #f03658;
 }
 .nav_logo{
     color: var(--white);
@@ -189,6 +192,7 @@ img{
     color: var(--white);
     font-size: 1.5rem;
     cursor: pointer;
+    
 }
 /*Active Menu*/
 .active::after{
@@ -198,7 +202,7 @@ img{
     height: 0.18rem;
     left: 0;
     top: 2rem;
-    background-color: var(--first-color);
+    background-color:  #f03658;
 }
 
 /*---------------Mostrar Menu----------------*/
@@ -233,7 +237,7 @@ img{
 
 }
 .home_title-color{
-    color: var(--second-color);
+    color:  #f03658;
 }
 
 /*home social icons*/
@@ -249,7 +253,7 @@ img{
     width: max-content;
     margin-bottom: var(--mb-2);
     font-size: 2rem;
-    color: var(--white);
+    color:   #f03658;
 }
 .home_social-icon:hover{
     color: var(--second-color);
@@ -267,7 +271,7 @@ img{
 /*botones*/
 .button{
     margin-top: 2rem;
-    background-color: var(--white);
+    background-color: rgb(15, 17, 19);
     color: var(--first-color);
     padding: .75rem 2rem;
     font-weight: bold;
@@ -352,7 +356,8 @@ img{
 }
 .box .icon{
     font-size: 60px;
-    color: var(--first-color);
+    color:  #f03658;
+
     transform: translateY(30px);
     
 }
@@ -414,6 +419,25 @@ img{
 
 
 /*---------------Z INDEX----------------*/
+/*
+#selector-theme{
+    display: inline-flex;
+    align-items: center;
+    position: fixed;
+    top: 12%;
+    right: 1%;
+    background:  rgb(148, 147, 147);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    
+}
+#selector-theme i{
+    width: max-content;
+    margin-bottom: var(--mb-2);
+    font-size: 2rem;
+    color:   #f03658;
+*/
 .btn-float{
     position: fixed;
     width: 40px;
@@ -421,7 +445,7 @@ img{
     line-height: 28px;
     top: 8%;
     right: 3%;
-    background: white;
+    background:rgb(15, 17, 19);
     border-radius: 50px;
     text-align: center;
     font-size: 27px;
@@ -429,9 +453,10 @@ img{
 
 }
 .bx-sun{
-    color: var(--first-color);
+    color: rgb(255, 255, 255);
     margin-top: 0px;
 }
+
 
 
 /*---------------Z INDEX----------------*/
@@ -475,9 +500,13 @@ img{
         color: var(--white);
     }
     .nav_link:hover::after{
-        background-color: var(--second-color);
+        background-color:  #f03658;
         top: 1.5rem;
        
+    }
+    .active::after{
+        top: 1.5rem;
+        
     }
 
   
