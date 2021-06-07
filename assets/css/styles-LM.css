@@ -3,18 +3,15 @@
     --first-color: #ff5171;
     --second-color:#420a0a;
     --white:#fff;
-    --black: rgb(15, 17, 19);
-    --grey: rgb(31, 31, 31);
 
 }
 body{
-    color: var(--white);
-    background-color: var(--black);
+    color: var(--second-color);
 }
 
 /*---------------ClASES CSS----------------*/
 .section-title{
-    color: var(--white);
+    color: var(--first-color);
 }
 .section-title::after{
     background-color: var(--first-color);
@@ -22,13 +19,14 @@ body{
 
 /*---------------LAYOUT----------------*/
 .l-header{
-    background-color: var(--grey);
-    box-shadow: 0 1px 20px rgba(139, 139, 139, 0.15);
+    background-color: var(--first-color);
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.15);
 }
+
 /*---------------NAV----------------*/
 @media screen and (max-width: 768px) {
     .nav_menu{
-        background-color: var(--black);
+        background-color: var(--second-color);
     }  
 }
 
@@ -54,7 +52,7 @@ body{
 /*---------------HOME---------------*/
 /*home data*/
 .home{
-    background-color: var(--grey);
+    background-color: var(--first-color);
 }
 .home_up{
     color: var(--second-color);
@@ -64,22 +62,21 @@ body{
 
 }
 .home_title-color{
-    color: var(--first-color);
+    color: var(--second-color);
 }
 /*home social icons*/
 
 .home_social-icon{
-    color: var(--first-color);
+    color: var(--white);
 }
 .home_social-icon:hover{
-    color: var(--white);
+    color: var(--second-color);
 }
 
 /*botones*/
 .button{
-    background-color: var(--black);
-    color: var(--white);
-    border: 2px solid var(--first-color);
+    background-color: var(--white);
+    color: var(--first-color);
 }
 .button:hover{
     background-color: var(--second-color);
@@ -102,11 +99,11 @@ body{
 
 /*------Button Dark-Mode-------------*/
 .btn-float{
-    background: var(--grey);
-    border: 2px solid var(--first-color);
+    background: #992f42;
+    border: 2px solid var(--white);
 }
-.bx-sun{
-    color: var(--first-color);
+.bx-moon{
+    color: var(--white);
 }
 
 /*---------------media----------------*/
@@ -116,11 +113,10 @@ body{
         color: var(--white);
     }
     .nav_link:hover::after{
-        background-color: var(--first-color);
+        background-color: var(--white);
+    }
+    .active::after{
+        background-color: var(--white);
     }
 }
-
-
-
-
 

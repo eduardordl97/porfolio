@@ -13,21 +13,7 @@ showMenu('nav-toggle','nav-menu')
 
 
 
-function change(){
-    if(document.getElementsByClassName('bx-moon')){
-        document.getElementById('change-theme').classList.remove('bx-moon');
-        document.getElementById('change-theme').classList.add('bx-sun');
-    }else if(document.getElementsByClassName('bx-sun')){
-        document.getElementById('change-theme').classList.remove('bx-sun');
-        document.getElementById('change-theme').classList.add('bx-moon');
-    }
-   
-     
 
-}
-document.getElementById('selector-theme').onclick = function(){
-    change();
-}
 
 /*----------Activar y remover menu-------------*/
 const navLink = document.querySelectorAll('.nav_link')
@@ -58,8 +44,8 @@ $(document).ready(function(){
                 }
 
         }else{
-            theme.attr('href',"./assets/css/styles.css")
-                if(theme.attr('href',"./assets/css/styles.css")){ 
+            theme.attr('href',"./assets/css/styles-LM.css")
+                if(theme.attr('href',"./assets/css/styles-LM.css")){ 
                     localStorage.setItem('light-mode','true') 
                     localStorage.setItem('dark-mode','false') 
                 }else{
@@ -72,11 +58,29 @@ $(document).ready(function(){
     })
       
     if(localStorage.getItem('light-mode')=== 'true'){
-        theme.attr('href','./assets/css/styles.css') 
+        theme.attr('href','./assets/css/styles-LM.css') 
         
     }else if(localStorage.getItem('dark-mode')=== 'true'){
         theme.attr('href','./assets/css/styles-DM.css')
     }
+
+
+    //
+
+    $("#change-theme").click(function () {
+        if ($("#selector-theme").children("i").hasClass('bx-moon')) {
+            $("#selector-theme").children("i").removeClass('bx-moon');
+            $("#selector-theme").children("i").addClass("bx-sun");
+
+        }
+        else if ($("#selector-theme").children("i").hasClass('bx-sun')) {
+            $("#selector-theme").children("i").removeClass('bx-sun');
+            $("#selector-theme").children("i").addClass("bx-moon");
+        }
+    });
+
+
+
     
 })
 /*----------Mostrar Menu-------------*/
