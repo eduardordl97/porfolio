@@ -34,23 +34,31 @@ $(document).ready(function(){
         
     $('#change-theme').click(function(){
         if(localStorage.getItem('light-mode')=== 'true'){
+            $("#selector-theme").children("i").removeClass('bx-moon');
+            $("#selector-theme").children("i").addClass("bx-sun");
             theme.attr('href',"./assets/css/styles-DM.css") 
                 if(theme.attr('href',"./assets/css/styles-DM.css")){ 
                     localStorage.setItem('light-mode','false') 
                     localStorage.setItem('dark-mode','true') 
+                   
                 }else{
                     localStorage.setItem('light-mode','true') 
                     localStorage.setItem('dark-mode','false') 
+          
                 }
 
         }else{
+            $("#selector-theme").children("i").removeClass('bx-sun');
+            $("#selector-theme").children("i").addClass("bx-moon");
             theme.attr('href',"./assets/css/styles-LM.css")
                 if(theme.attr('href',"./assets/css/styles-LM.css")){ 
                     localStorage.setItem('light-mode','true') 
                     localStorage.setItem('dark-mode','false') 
+                   
                 }else{
                     localStorage.setItem('light-mode','false') 
                     localStorage.setItem('dark-mode','true') 
+                 
                 }
         }
             
@@ -59,27 +67,16 @@ $(document).ready(function(){
       
     if(localStorage.getItem('light-mode')=== 'true'){
         theme.attr('href','./assets/css/styles-LM.css') 
+        $("#selector-theme").children("i").removeClass('bx-sun');
+        $("#selector-theme").children("i").addClass("bx-moon");
+       
         
     }else if(localStorage.getItem('dark-mode')=== 'true'){
         theme.attr('href','./assets/css/styles-DM.css')
+        $("#selector-theme").children("i").removeClass('bx-moon');
+        $("#selector-theme").children("i").addClass("bx-sun");
+     
     }
-
-
-    //
-
-    $("#change-theme").click(function () {
-        if ($("#selector-theme").children("i").hasClass('bx-moon')) {
-            $("#selector-theme").children("i").removeClass('bx-moon');
-            $("#selector-theme").children("i").addClass("bx-sun");
-
-        }
-        else if ($("#selector-theme").children("i").hasClass('bx-sun')) {
-            $("#selector-theme").children("i").removeClass('bx-sun');
-            $("#selector-theme").children("i").addClass("bx-moon");
-        }
-    });
-
-
 
     
 })
