@@ -7,6 +7,9 @@
     --grey: rgb(31, 31, 31);
 
 }
+html{
+    background: var(--black) !important;
+}
 body{
     color: var(--white);
     background-color: var(--black);

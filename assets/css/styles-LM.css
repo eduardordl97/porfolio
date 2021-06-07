@@ -5,6 +5,9 @@
     --white:#fff;
 
 }
+html{
+    background: var(--white) !important;
+}
 body{
     color: var(--second-color);
 }
