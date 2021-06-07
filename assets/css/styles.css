@@ -53,7 +53,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin: var(--header-height) 0 0 0;
+    margin: 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--second-color);
@@ -225,7 +225,7 @@ img{
 }
 .home_data_div{
     margin-top: 4rem;
-    width: 80%;
+    width: 90%;
 }
 .home_title{
     font-size: 3rem;
