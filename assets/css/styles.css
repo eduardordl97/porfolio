@@ -119,7 +119,6 @@ img{
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem;
-    background-color:var(--first-color);
     padding: 0 1rem;
     
    
@@ -208,9 +207,14 @@ img{
 /*---------------HOME---------------*/
 /*home data*/
 .home{
-    
+    position: relative;
+    background-color: var(--first-color);
+    overflow: hidden;
     height: calc(100vh - 3rem) ;
     row-gap: 1rem;
+}
+.home_container{
+    height: calc(100vh - var(--header-height)) ;
 }
 .home_up{
     width: 20px;
@@ -258,7 +262,7 @@ img{
 .home_img{
     position: absolute;
     right: 0;
-    bottom: -3rem;
+    bottom: 0;
     width: 70%;
     
 
