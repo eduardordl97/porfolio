@@ -53,7 +53,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    margin: 0;
+    margin: var(--header-height) 0 0 0;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--second-color);
@@ -209,7 +209,7 @@ img{
 /*home data*/
 .home{
     
-    height: 100vh ;
+    height: calc(100vh - 3rem) ;
     row-gap: 1rem;
 }
 .home_up{
