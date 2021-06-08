@@ -403,7 +403,12 @@ img{
 
 /*---------------PROJECTS----------------*/
 .portfolio_container{
-    overflow: initial;
+    display: grid;
+    align-items: center;
+    text-align: initial;
+  
+    
+    
 }
 
 .portfolio_content{
@@ -472,7 +477,14 @@ img{
 .swiper-button-next{
     right: -.5rem !important;
 }
-
+.bd-grid2{
+    max-width: 1280px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-column-gap: 2rem;
+    width: calc(100% - 3rem);
+    margin:auto;
+}
 
 
 
@@ -571,7 +583,19 @@ img{
     .bx-moon{
         margin-top: 0px;
     }
-
+   
+    .portfolio_content{
+        grid-template-columns: repeat(2,1fr);   
+    }
+    .portfolio_data{
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  
+        width: 150% !important;
+    }
+    
     
 
 
