@@ -131,6 +131,7 @@ body.dark .section-title::after{
     width: calc(100% - 3rem);
     margin:auto;
     
+    
 }
 .grid-container {
     display: grid;
@@ -138,6 +139,7 @@ body.dark .section-title::after{
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem;
     padding: 0 1rem;
+    
     
    
 }
@@ -150,6 +152,8 @@ body.dark .section-title::after{
     z-index: var(--z-fixed);
     background-color: var(--first-color);
     box-shadow: 0 1px 20px rgb(0 0 0 / 31%);
+    transition: .5s ease all;
+   
 
 }
 
@@ -165,6 +169,7 @@ body.dark .l-header{
     justify-content: space-between;
     align-items: center;
     font-weight: var(--font-m);
+    
 
 }
 @media screen and (max-width: 768px) {
@@ -256,6 +261,7 @@ body.dark .active::after{
     height: calc(100vh - 3rem) ;
     row-gap: 1rem;
     background-color: var(--first-color);
+    transition: .5s ease all;
 }
 .home_container{
     height: calc(100vh - var(--header-height)) ;
