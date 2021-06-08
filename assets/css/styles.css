@@ -357,6 +357,7 @@ body.dark .home_social-icon:hover{
 .button-flex{
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 
 body.dark .button{
@@ -370,6 +371,7 @@ body.dark .button:hover{
 }
 
 .portfolio_button {
+    width: 48%;
     background-color:var(--first-color) !important ;
     color: var(--white) !important;
     margin-top: 0rem;
@@ -528,11 +530,13 @@ body.dark .box{
 
 }
 .portfolio_img{
-    border-radius: .5rem;
+    border-radius: 1.5rem;
     width: auto;
+    padding: 1rem;
 }
 .portfolio_data{
     margin: 0;
+    padding: 1rem;
 }
 .portfolio_title{
     font-size: var(--h2-font-size);
@@ -579,7 +583,7 @@ body.dark .bx-sun{
 }
 
 
-/*---------------Z INDEX----------------*/
+/*---------------Projects----------------*/
 
 .swiper-button-prev::after,
 .swiper-button-next::after{
@@ -588,17 +592,22 @@ body.dark .bx-sun{
 .portfolio-seccion{
     margin-bottom: 1rems;
 }
+
 .portfolio_icon {
     font-size: 2rem ;
     color: var(--first-color) ;
 
 }
+/*
 .swiper-button-prev{
-    left: -.5rem !important;
+    left: 0rem !important;
+    
 }
 .swiper-button-next{
-    right: -.5rem !important;
+    right: 0rem !important;
+    
 }
+*/
 .swiper-pagination-bullet {
   
     background: #000 !important;
@@ -625,8 +634,54 @@ body.dark .swiper-pagination-bullet-active {
     margin:auto;
 }
 
+/* ===== CONTACT =====*/
+.contact_input{
+    width: 100%;
+    font-size: var(--normal-font-size);
+    font-weight: var(--font-semi);
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 2px solid var(--first-color);
+    outline: none;
+    margin-bottom: var(--mb-4);
+}
+body.dark .contact_input{
+    background-color: var(--grey);
+}
+  .contact_button{
+    display: block;
+    border: none;
+    outline: none;
+    font-size: var(--normal-font-size);
+    cursor: pointer;
+    margin-left: auto;
+    background-color: var(--first-color);
+    color: var(--white);
+}
+body.dark .contact_button{
+    background-color: var(--first-color);
+}
 
-
+/* ===== FOOTER =====*/
+.footer{
+    background-color: var(--second-color);
+    color: #fff;
+    text-align: center;
+    font-weight: var(--font-semi);
+    padding: 2rem 0;
+  }
+  .footer__title{
+    font-size: 2rem;
+    margin-bottom: var(--mb-4);
+  }
+  .footer__social{
+    margin-bottom: var(--mb-4);
+  }
+  .footer__icon{
+    font-size: 1.5rem;
+    color: #fff;
+    margin: 0 var(--mb-2)
+}
 
 
 /*---------------Z INDEX----------------*/
@@ -738,6 +793,11 @@ body.dark .swiper-pagination-bullet-active {
   
         width: 150% !important;
     }
+    form{
+        width: 90%;
+        margin:auto
+    }
+    
     
     
 
