@@ -4,13 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- 
+    <!--//////////////////////////  JQuery  ////////////////////////////-->
+     
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--Styles-->
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" id="theme"  href="./assets/css/styles-LM.css">
     <!--BoxIcons-->
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!--Swiper-->
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
+    
+    <!--//////////////////////////  Swiper  ////////////////////////////-->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    
+    <!--//////////////////////////  TYPED.JS  ////////////////////////////-->
+
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+ 
+
+
 
 
 
@@ -50,7 +67,7 @@
             <div class="home_container grid-container">
                 <div class="home_data">
                     <div class="home_data_div">
-                        <h1 class="home_title">Hi, <br> I'm <span class="home_title-color type" >Eduardo</span><br>Web Designer</h1>
+                        <h1 class="home_title">Hi, <br> I'm <span class="home_title-color type" id="typed2"></span><br>Web Designer</h1>
                         <a download="" href="assets/pdf/CV.pdf" class="button button-flex">Download CV
                         <i class='bx bx-download'></i></a>
                     </div>
@@ -136,27 +153,75 @@
                 </div>
                
             </div>
+        <!---------Projects--------->
+        <section class='portfolio-seccion' id='portfolio'>
+            <h2 class="section-title" >Projects</h2>
+            <div class="porfolio_container bd-grid swiper-container mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="portfolio_content swiper-slide">
+                        <img src="assets/img/work1.jpg" alt="" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Project 1</h3>
+                            <p class="portfolio_description" >website adaptable for all devices </p>
+                            <a href="#" class="button button-flex portfolio_button">
+                                Demo
+                                <i class='bx bx-right-arrow-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_content swiper-slide">
+                        <img src="assets/img/work1.jpg" alt="" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Project 1</h3>
+                            <p class="portfolio_description" >website adaptable for all devices </p>
+                            <a href="#" class="button button-flex portfolio_button">
+                                Demo
+                                <i class='bx bx-right-arrow-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="portfolio_content swiper-slide">
+                        <img src="assets/img/work1.jpg" alt="" class="portfolio_img">
+                        <div class="portfolio_data">
+                            <h3 class="portfolio_title">Project 1</h3>
+                            <p class="portfolio_description" >website adaptable for all devices </p>
+                            <a href="#" class="button button-flex portfolio_button">
+                                Demo
+                                <i class='bx bx-right-arrow-circle'></i>
+                            </a>
+                        </div>
+                    </div>
+                  
+                </div>
 
+                <div class="swiper-button-next ">
+                    <i class='bx bxs-chevron-right portfolio_icon' ></i>
+                </div>
+                <div class="swiper-button-prev ">
+                    <i class='bx bxs-chevron-left portfolio_icon' ></i>
+                </div>
+                <div class="swiper-pagination"></div>
+                </div>            
         </section>
         <section>
+            <div>
 
+            </div>
         </section>
     </main>
 
+ 
      
     <!--//////////////////////////  FOOTER  ////////////////////////////-->
 
     <!--//////////////////////////  SCROLL REVEAL  ////////////////////////////-->
 
-    <script src="https://unpkg.com/scrollreveal"></script>
+
+  
 
     <!--//////////////////////////  MAIN JS  ////////////////////////////-->
 
     <script src="./assets/js/main.js"></script>
-
-
-
-
     
 </body>
 </html>

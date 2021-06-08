@@ -15,6 +15,7 @@ showMenu('nav-toggle','nav-menu')
 
 
 
+
 /*----------Activar y remover menu-------------*/
 const navLink = document.querySelectorAll('.nav_link')
 function linkAction(){
@@ -80,8 +81,28 @@ $(document).ready(function(){
 
     
 })
-/*----------Mostrar Menu-------------*/
-/*----------Mostrar Menu-------------*/
-/*----------Mostrar Menu-------------*/
+
+
+/*----------Typed-------------*/
+let typed2 = new Typed('#typed2', {
+    strings: ['^1000 Eduardo',],
+    typeSpeed: 200,
+    fadeOut: true,     
+});
+/*----------Swiper-------------*/
+let swiper = new Swiper(".mySwiper", {
+    cssMode: true,
+    loop: true,
+
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    }
+});
+
 /*----------Mostrar Menu-------------*/
 /*----------Mostrar Menu-------------*/
