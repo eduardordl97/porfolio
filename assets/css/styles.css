@@ -7,9 +7,12 @@
 }
 /*---------------COLORES----------------*/
 :root{
-    --first-color: #ff5171;
-    --second-color:#420a0a;
+    --first-color: #4b5eb4;
+    --second-color:#131446;
     --white:#fff;
+    --black: rgb(15, 17, 19);
+    --grey: rgb(31, 31, 31);
+
 
 }
 /*---------------FUENTE Y TIPOGRAFIA----------------*/
@@ -52,12 +55,22 @@
 }
 html{
     scroll-behavior: smooth;
-    background: var(--second-color);
+    
+    
 }
 body{
+    background: var(--white);
+    color: var(--second-color);
     margin: var(--header-height) 0 0 0 ;
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
+    transition: .5s ease all;    
+}
+body.dark{
+    background: var(--black);   
+    color: var(--white);
+    
+    
 }
 h1,h2,p{
     margin: 0;
@@ -85,6 +98,7 @@ img{
     margin-top: 3rem;
     margin-bottom: 3rem;
     text-align: center;
+    color: var(--first-color);
 
 }
 .section-title::after{
@@ -96,6 +110,10 @@ img{
     right: 0;
     margin: auto;
     top: 2rem;
+    background-color: var(--first-color);
+}
+body.dark .section-title::after{
+    background-color: var(--first-color);
 }
 .section{
     padding-top: 1rem; 
@@ -130,7 +148,14 @@ img{
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
+    background-color: var(--first-color);
+    box-shadow: 0 1px 20px rgb(0 0 0 / 31%);
 
+}
+
+body.dark .l-header{
+    background-color: var(--grey);
+    box-shadow: 0 1px 23px rgb(1 0 0 / 59%);
 }
 
 /*---------------NAV----------------*/
@@ -151,18 +176,23 @@ img{
         height: 100%;
         padding: 2rem;
         transition: .5s;
+        background-color: var(--second-color);
 
     }  
+    body.dark .nav_menu{
+        background-color: var(--black);
+    }  
 }
+
+
 .nav_item{
     margin-bottom: var(--mb-4);
 }
 .nav_link{
     position: relative;
+    
 }
-.nav_link:hover{
-    position: relative;
-}
+
 .nav_link:hover{
     position:relative;
 }
@@ -173,6 +203,7 @@ img{
     height: 0.18rem;
     left: 0;
     top: 2rem;
+    background-color: var(--first-color);
 }
 .nav_logo{
     font-size: 1.1rem;
@@ -181,6 +212,22 @@ img{
 .nav_toggle{
     font-size: 1.5rem;
     cursor: pointer;
+    color: var(--white);
+}
+
+body.dark .nav_link{
+    position: relative;
+    color: var(--white);
+
+}
+body.dark .nav_link:hover::after{
+    background-color: var(--first-color);
+}
+body.dark .nav_logo{
+    color: var(--white);
+}
+body.dark .nav_toggle{
+    color: var(--white);
 }
 /*Active Menu*/
 .active::after{
@@ -190,6 +237,11 @@ img{
     height: 0.18rem;
     left: 0;
     top: 2rem;
+    background-color: var(--first-color);
+}
+
+body.dark .active::after{
+    background-color: var(--first-color);
 }
 
 /*---------------Mostrar Menu----------------*/
@@ -203,14 +255,12 @@ img{
     overflow: hidden;
     height: calc(100vh - 3rem) ;
     row-gap: 1rem;
+    background-color: var(--first-color);
 }
 .home_container{
     height: calc(100vh - var(--header-height)) ;
 }
-.home_up{
-    width: 20px;
-    height: 20px;
-}
+
 .home_data{
     grid-column: 1/5;
     grid-row: 1/3;
@@ -223,9 +273,26 @@ img{
 }
 .home_title{
     font-size: 3rem;
+    color: var(--white)
 
 }
+.home_title-color{
+    color: var(--second-color);
+}
 
+body.dark .home{
+    background-color: var(--grey);
+}
+body.dark .home_up{
+    color: var(--second-color);
+}
+body.dark .home_title{
+    color: var(--white)
+
+}
+body.dark .home_title-color{
+    color: var(--first-color);
+}
 /*home social icons*/
 .home_social{
     grid-column: 1/2;
@@ -239,6 +306,18 @@ img{
     width: max-content;
     margin-bottom: var(--mb-2);
     font-size: 2rem;
+    color: var(--second-color);
+}
+.home_social-icon:hover{
+    color: var(--white);
+}
+
+
+body.dark .home_social-icon{
+    color: var(--first-color);
+}
+body.dark .home_social-icon:hover{
+    color: var(--white);
 }
 
 /*home image*/
@@ -255,9 +334,15 @@ img{
     padding: .75rem 2rem;
     font-weight: bold;
     border-radius: .5rem;
+    background: var(--second-color);
+
+    border: 2px solid var(--white);
 }
 .button:hover{
     box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
+    background-color: var(--white);
+    color: var(--second-color);
+    border: 2px solid var(--second-color);
 }
 .bx-download{
     margin-left: var(--mb-1);
@@ -266,6 +351,16 @@ img{
 .button-flex{
     display: inline-flex;
     align-items: center;
+}
+
+body.dark .button{
+    background-color: var(--black);
+    color: var(--white);
+    border: 2px solid var(--first-color);
+}
+body.dark .button:hover{
+    background-color: var(--second-color);
+    color: var(--white);
 }
 
 .portfolio_button {
@@ -280,6 +375,7 @@ img{
 }
 
 
+
 /*---------------About----------------*/
 .about_container{
     row-gap: 2rem;
@@ -288,6 +384,10 @@ img{
 .about_subtitle{
     margin-top: 0rem;
     margin-bottom: var(--mb-2);
+    
+}
+.about_title-color{
+    color: var(--first-color);
 }
 .about_img{
     width: 100%;
@@ -323,6 +423,10 @@ img{
     border-radius: 5px;
     
 }
+body.dark .box{
+    
+    box-shadow: 0 3px 10px rgb(0 0 0);
+}
 
 
 .box h4{
@@ -339,7 +443,7 @@ img{
 .box:hover h4{
     transform: translateY(0);
     opacity: 1;
-    color: #fff;
+    color: var(--white);
 }
 .box .icon{
     font-size: 60px;
@@ -348,7 +452,7 @@ img{
     
 }
 .box:hover .icon{
-    color: #fff;
+    color:var(--white);
     font-size: 50px;
     transform: translateY(10px);
 }
@@ -368,6 +472,8 @@ img{
     top: -23px;
     left: -51px;
 }
+
+
 /*Change colors*/
 
 /*box 2*/
@@ -449,12 +555,22 @@ img{
     z-index: 100;
     cursor: pointer;
     box-shadow: 0 0px 5px rgb(0 0 0);
+    background: var(--second-color);
+    border: 2px solid var(--white);
 
 }
 .bx-moon{
     margin-top: 0px;
+    color: var(--white);
 }
 
+body.dark .btn-float{
+    background: var(--white);
+    border: 2px solid var(--first-color);
+}
+body.dark .bx-sun{
+    color: var(--first-color);
+}
 
 
 /*---------------Z INDEX----------------*/
@@ -477,6 +593,23 @@ img{
 .swiper-button-next{
     right: -.5rem !important;
 }
+.swiper-pagination-bullet {
+  
+    background: #000 !important;
+    
+}
+.swiper-pagination-bullet-active {
+    background: var(--first-color)  !important;
+}
+body.dark .swiper-pagination-bullet {
+  
+    background: var(--white) !important;
+    
+}
+body.dark .swiper-pagination-bullet-active {
+    background: var(--first-color)  !important;
+}
+
 .bd-grid2{
     max-width: 1280px;
     display: grid;
@@ -525,13 +658,17 @@ img{
     .nav_toggle{
       display: none;
     }
-
+    .nav_link{
+        color: var(--white);
+    }
     .nav_link:hover::after{
         top: 1.5rem;
-    
+        background-color: var(--white);
     }
+
     .active::after{
         top: 1.5rem;
+        background-color: var(--white);
     }
     .home{
         height: 100vh  ;

@@ -29,51 +29,40 @@ function linkAction(){
 
 }
 navLink.forEach(n => n.addEventListener('click',linkAction))
-/*----------Mostrar Menu-------------*/
+/*----------Dark Mode-------------*/
 $(document).ready(function(){
-    var theme = $('#theme')  
-        
+    
     $('#change-theme').click(function(){
         if(localStorage.getItem('light-mode')=== 'true'){
+            document.body.classList.toggle('dark')
             $("#selector-theme").children("i").removeClass('bx-moon');
             $("#selector-theme").children("i").addClass("bx-sun");
-            theme.attr('href',"./assets/css/styles-DM.css") 
-                if(theme.attr('href',"./assets/css/styles-DM.css")){ 
-                    localStorage.setItem('light-mode','false') 
-                    localStorage.setItem('dark-mode','true') 
+    
+            localStorage.setItem('light-mode','false') 
+            localStorage.setItem('dark-mode','true') 
                    
-                }else{
-                    localStorage.setItem('light-mode','true') 
-                    localStorage.setItem('dark-mode','false') 
-          
-                }
+        
 
         }else{
+            document.body.classList.toggle('dark')
             $("#selector-theme").children("i").removeClass('bx-sun');
             $("#selector-theme").children("i").addClass("bx-moon");
-            theme.attr('href',"./assets/css/styles-LM.css")
-                if(theme.attr('href',"./assets/css/styles-LM.css")){ 
-                    localStorage.setItem('light-mode','true') 
-                    localStorage.setItem('dark-mode','false') 
-                   
-                }else{
-                    localStorage.setItem('light-mode','false') 
-                    localStorage.setItem('dark-mode','true') 
-                 
-                }
+            localStorage.setItem('light-mode','true') 
+            localStorage.setItem('dark-mode','false') 
+
         }
             
             
     })
       
     if(localStorage.getItem('light-mode')=== 'true'){
-        theme.attr('href','./assets/css/styles-LM.css') 
+        document.body.classList.remove('dark')
         $("#selector-theme").children("i").removeClass('bx-sun');
         $("#selector-theme").children("i").addClass("bx-moon");
        
         
     }else if(localStorage.getItem('dark-mode')=== 'true'){
-        theme.attr('href','./assets/css/styles-DM.css')
+        document.body.classList.add('dark')
         $("#selector-theme").children("i").removeClass('bx-moon');
         $("#selector-theme").children("i").addClass("bx-sun");
      
