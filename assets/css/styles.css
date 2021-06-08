@@ -344,6 +344,7 @@ body.dark .home_social-icon:hover{
 
     border: 2px solid var(--white);
 }
+
 .button:hover{
     box-shadow: 0 10px 36px rgba(0, 0, 0, .15);
     background-color: var(--white);
@@ -377,6 +378,11 @@ body.dark .button:hover{
     margin-top: 0rem;
     margin-bottom: 2rem;
     margin-right: .5rem;
+    margin-top: 2rem;
+    padding: .75rem 2rem;
+    font-weight: bold;
+    border-radius: .5rem;
+    border: 2px solid var(--white);
 }
 .bx-right-arrow-circle,
 .bxl-git{

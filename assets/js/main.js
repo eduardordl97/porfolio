@@ -93,5 +93,44 @@ let swiper = new Swiper(".mySwiper", {
     }
 });
 
-/*----------Mostrar Menu-------------*/
-/*----------Mostrar Menu-------------*/
+/*----------SCROLL REVEAL-------------*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '80px',
+    duration: 2000,
+    reset: true
+});
+
+/*SCROLL HOME*/
+sr.reveal('.home_title',{}); 
+sr.reveal('.button',{delay: 200}); 
+sr.reveal('.home_img',{delay: 400}); 
+sr.reveal('.home_social-icon',{ interval: 200}); 
+
+/*SCROLL ABOUT*/
+sr.reveal('.about_img',{}); 
+sr.reveal('.about_subtitle',{delay: 400}); 
+sr.reveal('.about_text',{delay: 400}); 
+
+/*SCROLL SKILLS*/
+sr.reveal('.skills_subtitle',{}); 
+sr.reveal('.container-box',{}); 
+sr.reveal('.box1',{delay: 100}); 
+sr.reveal('.box2',{delay: 200}); 
+sr.reveal('.box3',{delay: 300}); 
+sr.reveal('.box4',{delay: 400}); 
+sr.reveal('.box5',{delay: 500}); 
+sr.reveal('.box6',{delay: 600}); 
+sr.reveal('.box7',{delay: 700}); 
+sr.reveal('.box8',{delay: 800}); 
+sr.reveal('.box9',{delay: 900}); 
+
+
+/*SCROLL WORK*/
+sr.reveal('.porfolio_container',{}); 
+
+/*SCROLL CONTACT*/
+sr.reveal('.contact__input',{interval: 200}); 
+sr.reveal('.contact__form',{}); 
+
+
