@@ -382,8 +382,9 @@ body.dark .button:hover{
     padding: .75rem 2rem;
     font-weight: bold;
     border-radius: .5rem;
-    border: 2px solid var(--white);
+
 }
+
 .bx-right-arrow-circle,
 .bxl-git{
     margin-left: var(--mb-1);
@@ -646,6 +647,7 @@ body.dark .bx-sun{
 }
 body.dark .contact_input{
     background-color: var(--grey);
+    color: var(--white);
 }
   .contact_button{
     display: block;
