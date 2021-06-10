@@ -538,8 +538,9 @@ body.dark .box{
 }
 .portfolio_img{
     border-radius: 1.5rem;
-    width: auto;
+    height: autos;
     padding: 1rem;
+    object-fit: cover;
 }
 .portfolio_data{
     margin: 0;
